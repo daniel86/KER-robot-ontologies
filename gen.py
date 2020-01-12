@@ -22,8 +22,18 @@ for root, dirs, files in os.walk(projects_dir):
     for filename in files:
         file_path = os.path.join(projects_dir,filename)
         with open(file_path) as proj_file:
-            projects.append(json.load(proj_file))
+            projects.append(json.load(proj_file, 'iso-8859-1'))
 
+# cog_pubs
+cog_map={}
+for cog in cogs:
+    cog_map[cog['id']]=cog
+    cog['pubs']=[]
+for proj in projects:
+    for pub in proj['publications']:
+        pub['project']=proj['id']
+        for cog_id in pub['cogs']:
+            cog_map[cog_id]['pubs'].append(pub)
 
 with open('template.html', 'r') as in_file:
     t = Template(in_file.read())
@@ -31,5 +41,5 @@ with open('template.html', 'r') as in_file:
                  'projects': projects})
     ##
     with open("index.html", "w") as text_file:
-        text_file.write(t.render(c))
+        text_file.write(t.render(c).encode('utf8'))
 

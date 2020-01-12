@@ -10,26 +10,14 @@
   "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
   "publications": [
     {
-        "title": "PAPER_TITLE",
-        "year": 2019,
-        "url": "PAPER_URL",
-        "info": "PUBLISHER_CONFERENCE_ETC",
-        "authors": [
-            "NAME1",
-            "NAME2"
-        ],
-        "cogs": ["Recognition"]
+        "short": "Name et al. Year",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
+        "cogs": ["cog-rec"]
     },
     {
-        "title": "PAPER_TITLE2",
-        "year": 2011,
-        "url": "PAPER_URL",
-        "info": "PUBLISHER_CONFERENCE_ETC",
-        "authors": [
-            "NAMEA",
-            "NAMEB"
-        ],
-        "cogs": ["Perception"]
+        "short": "Name et al. Year",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
+        "cogs": ["cog-rec"]
     }
   ]
 }

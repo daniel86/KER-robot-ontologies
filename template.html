@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <meta charset="ISO-8859-1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
@@ -41,6 +41,12 @@ section {
 .card-body .more:not(.collapsed)::after {
   content: '- Show Less';
 }
+.card-body .pubs.collapsed::after {
+  content: '+ Show Publications';
+}
+.card-body .pubs:not(.collapsed)::after {
+  content: '- Hide Publications';
+}
   </style>
 
   <!-- Optional JavaScript -->
@@ -69,13 +75,10 @@ section {
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#cogs">Capabilities</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+            <a class="nav-link js-scroll-trigger" href="#cogs">Capabilities</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -130,27 +133,6 @@ section {
     </div>
   </section>
 
-  <section id="cogs" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Cognitive Capabilities</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-{% for cog in cogs %}
-          <div class="card w-100">
-            <div class="card-body">
-              <h5 class="card-title">{{ cog.name }}</h5>
-              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-              <p class="card-text collapse" id="{{ cog.id }}" aria-expanded="false">{{ cog.text }}</p>
-              <a role="button" class="more collapsed" data-toggle="collapse" href="#{{ cog.id }}" aria-expanded="false" aria-controls="{{ cog.id }}"></a>
-            </div>
-          </div><br>
-{% endfor %}
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="projects">
     <div class="container">
       <div class="row">
@@ -158,22 +140,32 @@ section {
           <h2>Projects</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 {% for proj in projects %}
-          <div class="card w-100">
+          <div class="card w-100" id="{{ proj.id }}-card">
             <div class="card-body">
               <h5 class="card-title">{{ proj.short_name }} ({{ proj.year }})</h5>
               <!-- <h6 class="card-subtitle mb-2 text-muted">{{ proj.name }}</h6> -->
               <p class="card-subtitle mb-2 text-muted">{{ proj.maintainer }}</p>
               <p class="card-text collapse" id="{{ proj.id }}" aria-expanded="false">{{ proj.text }}</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#{{ proj.id }}" aria-expanded="false" aria-controls="{{ proj.id }}"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#{{ proj.id }}-pubs" aria-expanded="false" aria-controls="{{ proj.id }}-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="{{ proj.id }}-pubs" aria-expanded="false">
+{% for pub in proj.publications %}
+                <li class="list-group-item font-weight-light font-italic text-muted">{{ pub.text }}
+{% for pubcog in pub.cogs %}
+                    <a href="#{{ pubcog }}-card">{{ pubcog }}</a>
+{% endfor %}
+                </li>
+{% endfor %}
+              </ul><br>
 {% if proj.url %}
-              <a class="card-link" href="{{ proj.url }}">Website</a>
+              <a class="card-link" href="{{ proj.url }}">Project Website</a>
+{% endif %}
+{% if proj.maintainer_url %}
+              <a class="card-link" href="{{ proj.maintainer_url }}">Maintainer Website</a>
 {% endif %}
 {% if proj.src %}
               <a class="card-link" href="{{ proj.src }}">Source Code</a>
 {% endif %}
-{% if proj.maintainer_url %}
-              <a class="card-link" href="{{ proj.maintainer_url }}">Maintainer</a>
-{% endif %}
-              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#{{ proj.id }}" aria-expanded="false" aria-controls="{{ proj.id }}"></a>
             </div>
           </div><br>
 {% endfor %}
@@ -182,12 +174,30 @@ section {
     </div>
   </section>
 
-  <section id="publications" class="bg-light">
+  <section id="cogs" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Publications</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <h2>Cognitive Capabilities</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+{% for cog in cogs %}
+          <div class="card w-100" id="{{ cog.id }}-card">
+            <div class="card-body">
+              <h5 class="card-title">{{ cog.name }}</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="{{ cog.id }}" aria-expanded="false">{{ cog.text }}</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#{{ cog.id }}" aria-expanded="false" aria-controls="{{ cog.id }}"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#{{ cog.id }}-pubs" aria-expanded="false" aria-controls="{{ cog.id }}-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="{{ cog.id }}-pubs" aria-expanded="false">
+{% for pub in cog.pubs %}
+                <li class="list-group-item font-weight-light font-italic text-muted">{{ pub.text }}
+                    <a href="#{{ pub.project }}-card">{{ pub.project }}</a>
+                </li>
+{% endfor %}
+              </ul>
+            </div>
+          </div><br>
+{% endfor %}
         </div>
       </div>
     </div>

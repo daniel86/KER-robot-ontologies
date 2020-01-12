@@ -10,26 +10,14 @@
   "text": "KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web). It supports different deterministic and probabilistic reasoning mechanisms, clustering, classification and segmentation methods, and includes query interfaces as well as visualization tools.",
   "publications": [
     {
-        "title": "PAPER_TITLE",
-        "year": 2019,
-        "url": "PAPER_URL",
-        "info": "PUBLISHER_CONFERENCE_ETC",
-        "authors": [
-            "NAME1",
-            "NAME2"
-        ],
-        "cogs": ["Recognition"]
+        "short": "Beßler et al. 2019",
+        "text": "Beßler, Daniel, Robert Porzel, et al. (2019). Foundational Models for Manipulation Activity Parsing. In: Augmented Reality and Virtual Reality -- Changing Realities in a Dynamic World. Ed. by Timothy Jung, M. Claudia tom Dieck, and Philipp A. Rauschnabel. 978-3-030-37869-1. Springer. isbn: 978-3-030-37869-1.",
+        "cogs": ["cog-rec"]
     },
     {
-        "title": "PAPER_TITLE2",
-        "year": 2011,
-        "url": "PAPER_URL",
-        "info": "PUBLISHER_CONFERENCE_ETC",
-        "authors": [
-            "NAMEA",
-            "NAMEB"
-        ],
-        "cogs": ["Perception"]
+        "short": "Beetz et al. 2015",
+        "text": "Beetz, Michael, Ferenc Balint-Benczedi, et al. (2015). RoboSherlock: Unstructured information processing for robot perception. In: pp. 1549--1556.",
+        "cogs": ["cog-perc"]
     }
   ]
 }
