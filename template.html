@@ -157,11 +157,6 @@ section {
         <div class="col-lg-8 mx-auto">
           <h2>Projects</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-<!-- TODO: make use of:
-  "year": "PROJECT_DURATION",
-  "maintainer":     "MAINTAINER_NAME",
-  "maintainer_url": "MAINTAINER_WEBSITE"
--->
 {% for proj in projects %}
           <div class="card w-100">
             <div class="card-body">
@@ -169,10 +164,16 @@ section {
               <!-- <h6 class="card-subtitle mb-2 text-muted">{{ proj.name }}</h6> -->
               <p class="card-subtitle mb-2 text-muted">{{ proj.maintainer }}</p>
               <p class="card-text collapse" id="{{ proj.id }}" aria-expanded="false">{{ proj.text }}</p>
-              <a role="button" class="more collapsed" data-toggle="collapse" href="#{{ proj.id }}" aria-expanded="false" aria-controls="{{ proj.id }}"></a>
-              <a role="button" href="{{ proj.url }}">Website</a>
-              <a role="button" href="{{ proj.src }}">Source Code</a>
-              <a role="button" href="{{ proj.maintainer_url }}">Maintainer</a>
+{% if proj.url %}
+              <a class="card-link" href="{{ proj.url }}">Website</a>
+{% endif %}
+{% if proj.src %}
+              <a class="card-link" href="{{ proj.src }}">Source Code</a>
+{% endif %}
+{% if proj.maintainer_url %}
+              <a class="card-link" href="{{ proj.maintainer_url }}">Maintainer</a>
+{% endif %}
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#{{ proj.id }}" aria-expanded="false" aria-controls="{{ proj.id }}"></a>
             </div>
           </div><br>
 {% endfor %}
