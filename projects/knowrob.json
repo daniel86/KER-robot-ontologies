@@ -1,0 +1,35 @@
+{
+  "id": "KnowRob",
+  "name": "KnowRob",
+  "short_name": "KnowRob",
+  "url":  "http://knowrob.org",
+  "src":  "https://github.com/knowrob/knowrob",
+  "year": "2009-",
+  "maintainer":     "Institute for Artificial Intelligence, University of Bremen",
+  "maintainer_url": "http://ai.uni-bremen.de",
+  "text": "KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web). It supports different deterministic and probabilistic reasoning mechanisms, clustering, classification and segmentation methods, and includes query interfaces as well as visualization tools.",
+  "publications": [
+    {
+        "title": "PAPER_TITLE",
+        "year": 2019,
+        "url": "PAPER_URL",
+        "info": "PUBLISHER_CONFERENCE_ETC",
+        "authors": [
+            "NAME1",
+            "NAME2"
+        ],
+        "cogs": ["Recognition"]
+    },
+    {
+        "title": "PAPER_TITLE2",
+        "year": 2011,
+        "url": "PAPER_URL",
+        "info": "PUBLISHER_CONFERENCE_ETC",
+        "authors": [
+            "NAMEA",
+            "NAMEB"
+        ],
+        "cogs": ["Perception"]
+    }
+  ]
+}

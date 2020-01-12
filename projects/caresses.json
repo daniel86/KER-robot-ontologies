@@ -1,0 +1,35 @@
+{
+  "id": "CARESSES",
+  "name": "CARESSES",
+  "short_name": "CARESSES",
+  "url":  "PROJECT_WEBSITE",
+  "src":  "PROJECT_SOURCE_CODE",
+  "year": "?-?",
+  "maintainer":     "MAINTAINER_NAME",
+  "maintainer_url": "MAINTAINER_WEBSITE",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
+  "publications": [
+    {
+        "title": "PAPER_TITLE",
+        "year": 2019,
+        "url": "PAPER_URL",
+        "info": "PUBLISHER_CONFERENCE_ETC",
+        "authors": [
+            "NAME1",
+            "NAME2"
+        ],
+        "cogs": ["Recognition"]
+    },
+    {
+        "title": "PAPER_TITLE2",
+        "year": 2011,
+        "url": "PAPER_URL",
+        "info": "PUBLISHER_CONFERENCE_ETC",
+        "authors": [
+            "NAMEA",
+            "NAMEB"
+        ],
+        "cogs": ["Perception"]
+    }
+  ]
+}
