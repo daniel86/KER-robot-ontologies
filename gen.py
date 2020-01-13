@@ -9,7 +9,6 @@ from django.conf import settings
 # http://stackoverflow.com/questions/98135/how-do-i-use-django-templates-without-the-rest-of-django
 
 settings.configure(
-    INSTALLED_APPS=['django_assets', 'django.contrib.staticfiles'],
     TEMPLATES=[{'BACKEND': 'django.template.backends.django.DjangoTemplates'}],
 )
 
