@@ -1,6 +1,9 @@
-name: CI
+name: Continuous Deployment to GitHub Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -8,19 +11,20 @@ jobs:
     runs-on: ubuntu-16.04
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Update
-      run: sudo apt-get update
+    - name: Checkout repo
+      uses: actions/checkout@master
+
     - name: Install Dependencies
-      run: sudo apt-get install python-django
+      run: sudo apt-get update && sudo apt-get install python-django
+      
     - name: Generate HTML
       run: python2 gen.py
+      
     - name: Move to deploy dir
       run: mkdir -p GHPAGES && mv index.html GHPAGES/
+      
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
-      with:
-        super_secret: ${{ secrets.GH_PAT }}
       env:
         GH_PAT: ${{ secrets.GH_PAT }}
         BUILD_DIR: GHPAGES
