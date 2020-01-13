@@ -22,10 +22,12 @@ jobs:
       
     - name: Move to deploy dir
       run: mkdir -p GHPAGES && mv index.html GHPAGES/
-      
-    - name: GitHub Pages Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: GHPAGES # The folder the action should deploy.
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        # ACTIONS_DEPLOY_KEY: ${{ secrets.GH_PAT }}
+        PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
+        # GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./GHPAGES
