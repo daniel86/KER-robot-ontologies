@@ -5,8 +5,13 @@ import os
 
 from django.template import Template, Context
 from django.conf import settings
-settings.configure() # We have to do this to use django templates standalone - see
+#settings.configure() # We have to do this to use django templates standalone - see
 # http://stackoverflow.com/questions/98135/how-do-i-use-django-templates-without-the-rest-of-django
+
+settings.configure(
+    INSTALLED_APPS=['django_assets', 'django.contrib.staticfiles'],
+    TEMPLATES=[{'BACKEND': 'django.template.backends.django.DjangoTemplates'}],
+)
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
 
