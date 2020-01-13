@@ -19,3 +19,7 @@ jobs:
       run: mkdir -p GHPAGES && mv index.html GHPAGES/
     - name: Run a multi-line script
       run: echo "foo bar"
+    - name: GitHub Pages Deploy
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+          BUILD_DIR: GHPAGES
