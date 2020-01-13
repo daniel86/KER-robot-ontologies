@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install Dependencies
-      run: apt-get install python-django
+      run: sudo apt-get install python-django
     - name: Generate HTML
       run: python gen.py
     - name: Run a one-line script
