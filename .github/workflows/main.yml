@@ -27,4 +27,4 @@ jobs:
       uses: maxheld83/ghpages@v0.2.1
       env:
         GH_PAT: ${{ secrets.GH_PAT }}
-        BUILD_DIR: GHPAGES
+        BUILD_DIR: "GHPAGES/"
