@@ -12,7 +12,7 @@ jobs:
     - name: Install Dependencies
       run: pip install django
     - name: Generate HTML
-      run: python gen.py
+      run: python2 gen.py
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
