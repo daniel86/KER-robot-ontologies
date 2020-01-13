@@ -17,9 +17,14 @@ jobs:
       run: python2 gen.py
     - name: Move to deploy dir
       run: mkdir -p GHPAGES && mv index.html GHPAGES/
+    - name: Decrypt GH_PAT
+      run: ./.github/scripts/decrypt_secret.sh
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
       with:
-          super_secret: ${{ secrets.GH_PAT }}
+        super_secret: ${{ secrets.GH_PAT }}
       env:
-          BUILD_DIR: GHPAGES
+        GH_PAT: ${{ secrets.GH_PAT }}
+        BUILD_DIR: GHPAGES
