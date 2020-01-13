@@ -15,9 +15,7 @@ jobs:
       run: sudo apt-get install python-django
     - name: Generate HTML
       run: python2 gen.py
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Move to deploy dir
+      run: mkdir -p GHPAGES && mv index.html GHPAGES/
     - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      run: echo "foo bar"
