@@ -24,7 +24,8 @@ jobs:
       run: mkdir -p GHPAGES && mv index.html GHPAGES/
       
     - name: GitHub Pages Deploy
-      uses: maxheld83/ghpages@v0.2.1
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
-        BUILD_DIR: "GHPAGES/"
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: GHPAGES # The folder the action should deploy.
