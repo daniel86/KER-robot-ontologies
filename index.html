@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+header {
+  padding: 156px 0 100px;
+}
+section {
+  padding: 150px 0;
+}
+.abstract {
+  font-style: italic;
+}
+#bibtex {
+  resize: none;
+  height: 230px;
+  overflow: hidden;
+}
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.card-body .card-text.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+.card-body .card-text.collapsing {
+  height: 3rem;
+}
+.card-body .more.collapsed::after {
+  content: '+ Show More';
+}
+.card-body .more:not(.collapsed)::after {
+  content: '- Show Less';
+}
+.card-body .pubs.collapsed::after {
+  content: '+ Show Publications';
+}
+.card-body .pubs:not(.collapsed)::after {
+  content: '- Hide Publications';
+}
+  </style>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <title>Ontology-based Approaches to Robot Autonomy</title>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <!--
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#cogs">Capabilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Ontology-based Approaches to Robot Autonomy</h1>
+      <p class="lead">A landscape of current research</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About this page</h2>
+          <!-- -->
+          <!-- TODO: add reference to (Langley, Laird, and S. Rogers 2009).-->
+          <p class="lead">This page presents different projects that use explicit knowledge encoded in an ontology to support some aspects of robot autonomy. Robots may reach different levels of autonomy depending on what restrictions their architecture imposes, and what type of cognitive capabilities it supports. It is hard, however, to pinpoint a definition of autonomy. It is more common to list features that a cognitive system needs to address, such as:</p>
+          <ul>
+            <li>recognition and categorization;</li>
+            <li>decision making and choice;</li>
+            <li>perception and situation assessment;</li>
+            <li>prediction and monitoring;</li>
+            <li>problem solving and planning;</li>
+            <li>reasoning and belief maintenance;</li>
+            <li>execution and action; and</li>
+            <li>remembering, reflection, and learning.</li>
+          </ul>
+          <!-- -->
+          <!-- TODO: add link to KER -->
+          <p class="lead">This page has been created to summarize the findings of the literature review paper entitled <em>"A Review and Comparison of Ontology-based Approaches to Robot Autonomy"</em> that was published at the Knowledge Engineering Review journal in 2020.</p>
+          <p class="lead">This is the abstract of the paper: <div class="abstract">Within the next decades, robots will need to be able to execute a large variety of tasks autonomously in a large variety of environments. To relax the resulting programming effort, a knowledge-enabled approach to robot programming can be adopted to organize information in re-usable knowledge pieces. However, for the ease of re-use, there needs to be an agreement on the meaning of terms. A common approach is to represent these terms using ontology languages that conceptualize the respective domain. In this work, we will review projects that use ontologies to support robot autonomy. We will systematically search for projects that fulfill a set of inclusion criteria, and compare them with each other with respect to the scope of their ontology, what types of cognitive capabilities are supported by the use of ontologies, and which is their application domain.</div></p>
+          <p class="lead">Please use the following bibtex entry for citing us:<br><br>
+          <!-- TODO: update the bibtex entry -->
+          <textarea id="bibtex" class="form-control rounded" readonly>
+@article{olivares20ker,
+  author = {Olivares-Alarcos, Alberto and Be{\ss}ler, Daniel and Khamis, Alaa and Goncalves, Paulo and Habib, Maki and Bermejo, Julita and Barreto, Marcos and Diab, Mohammed and Rosell, Jan and Quintas, Jo\~ao and Olszewska, Joanna and Nakawala, Hirenkumar and Pignaton, Edison and Gyrard, Amelie and Borgo, Stefano and Aleny\`a, Guillem and Beetz, Michael and Li, Howard},
+  title = {A Review and Comparison of Ontology-based Approaches to Robot Autonomy},
+  journal = {Knowledge Eng. Review},
+  year = {2020}
+}
+          </textarea>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Projects</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+          <div class="card w-100" id="ORO-card">
+            <div class="card-body">
+              <h5 class="card-title">ORO (2010-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">ORO</h6> -->
+              <p class="card-subtitle mb-2 text-muted">LAAS-CNRS, France</p>
+              <p class="card-text collapse" id="ORO" aria-expanded="false">ORO is a project focused on the implementation of a common representation frameworkfor autonomous robots with special emphasizes on human-robot interaction. The proposed framework was meant to enhance robotâs interactionwith complex and human-inhabited environments, were robots are expected to exhibit advancedcognitive skills, such as: object recognition, natural language interaction, task planning withpossible dynamic re-planning, ability to cooperate with other robots or humans, etc.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#ORO" aria-expanded="false" aria-controls="ORO"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#ORO-pubs" aria-expanded="false" aria-controls="ORO-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="ORO-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="https://www.openrobots.org/wiki/oro-server/">Project Website</a>
+
+
+              <a class="card-link" href="https://www.laas.fr/public/">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://www.openrobots.org/wiki/oro-ontology">Source Code</a>
+
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="KnowRob-card">
+            <div class="card-body">
+              <h5 class="card-title">KnowRob (2009-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">KnowRob</h6> -->
+              <p class="card-subtitle mb-2 text-muted">Institute for Artificial Intelligence, University of Bremen</p>
+              <p class="card-text collapse" id="KnowRob" aria-expanded="false">KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web). It supports different deterministic and probabilistic reasoning mechanisms, clustering, classification and segmentation methods, and includes query interfaces as well as visualization tools.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#KnowRob" aria-expanded="false" aria-controls="KnowRob"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#KnowRob-pubs" aria-expanded="false" aria-controls="KnowRob-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="KnowRob-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">BeÃler, Daniel, Robert Porzel, et al. (2019). Foundational Models for Manipulation Activity Parsing. In: Augmented Reality and Virtual Reality -- Changing Realities in a Dynamic World. Ed. by Timothy Jung, M. Claudia tom Dieck, and Philipp A. Rauschnabel. 978-3-030-37869-1. Springer. isbn: 978-3-030-37869-1.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Beetz, Michael, Ferenc Balint-Benczedi, et al. (2015). RoboSherlock: Unstructured information processing for robot perception. In: pp. 1549--1556.
+
+                    <a href="#cog-perc-card">cog-perc</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="http://knowrob.org">Project Website</a>
+
+
+              <a class="card-link" href="http://ai.uni-bremen.de">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://github.com/knowrob/knowrob">Source Code</a>
+
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="OROSU-card">
+            <div class="card-body">
+              <h5 class="card-title">OROSU (2013-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">OROSU</h6> -->
+              <p class="card-subtitle mb-2 text-muted">Polytechnic Institute of Castelo Branco, Portugal</p>
+              <p class="card-text collapse" id="OROSU" aria-expanded="false">An Ontology for Robotic Orthopedic Surgery (OROSU) was developed and then applied for hip resurfacing surgery (e.g., for trimming the femoral head). In this scope, the main goal of the research, related to ontologies, was to build a knowledge-based framework for this surgical scenario, along with a formal definition of components and actions to be performed during the surgery. The developed ontology was partially based on the 1872â2015 â IEEE Standard Ontologies for Robotics and Automation. The work was developed under the HIPROB and ECHORD projects, funded by the Portuguese Science Foundation and the EU-FP7, respectively. The framework is among the first to integrate robotic ontologies in the domain of surgical robotics.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#OROSU" aria-expanded="false" aria-controls="OROSU"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#OROSU-pubs" aria-expanded="false" aria-controls="OROSU-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="OROSU-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="http://www.echord.info/wikis/website/hiprob.html">Project Website</a>
+
+
+              <a class="card-link" href="https://www.ipcb.pt/">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://github.com/pbsgoncalves/OROSU">Source Code</a>
+
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="PMK-card">
+            <div class="card-body">
+              <h5 class="card-title">PMK (2019-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">PMK</h6> -->
+              <p class="card-subtitle mb-2 text-muted">Institute of Industrial and Control Engineering (IOC), Polytechnic University of Catalonia (UPC)</p>
+              <p class="card-text collapse" id="PMK" aria-expanded="false">Perception and Manipulation knowledge framework (PMK) presents a standardized ontology framework for autonomous robot perception and manipulation, which follows the IEEE standards 1872 of representing knowledge for the robotic domain. Moreover, an inference mechanism for reasoning over the knowledge is included, which enhances the planning of manipulation tasks. A perception module can be integrated with the framework to capture a rich semantic description of the scene, knowledge about the physical behavior of the objects, and reasoning about the potential manipulation actions. The reasoning scope of PMK is divided into four parts: reasoning for perception, the reasoning for object features, the reasoning for a situation, and reasoning for planning.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#PMK" aria-expanded="false" aria-controls="PMK"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#PMK-pubs" aria-expanded="false" aria-controls="PMK-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="PMK-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="https://github.com/MohammedDiab1/PMK">Project Website</a>
+
+
+              <a class="card-link" href="https://ioc.upc.edu/en">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://github.com/MohammedDiab1/PMK">Source Code</a>
+
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="CARESSES-card">
+            <div class="card-body">
+              <h5 class="card-title">CARESSES (2017-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">CARESSES</h6> -->
+              <p class="card-subtitle mb-2 text-muted">Department of Informatics, Bioengineering, Robotics, and Systems Engineering, University of Genoa</p>
+              <p class="card-text collapse" id="CARESSES" aria-expanded="false">CARESSES is an international, multidisciplinary project whose goal is to design the first robots that can assist older people and adapt to the culture of the individual they are taking care of. The robots will help the users in many ways including reminding them to take their medication, encouraging them to keep active, helping them keep in touch with family and friends. Each action will be performed with attention to the older personâs customs, cultural practices and individual preferences.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#CARESSES" aria-expanded="false" aria-controls="CARESSES"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#CARESSES-pubs" aria-expanded="false" aria-controls="CARESSES-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="CARESSES-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="http://caressesrobot.org/en/">Project Website</a>
+
+
+              <a class="card-link" href="https://www.dibris.unige.it/en/">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://github.com/Suman7495/Robot-Navigation-for-Vision-Based-HAR/tree/master/Vision%20Based%20Navigation%20for%20HAR/ontology">Source Code</a>
+
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="ROSETTA-card">
+            <div class="card-body">
+              <h5 class="card-title">ROSETTA (2013-)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">ROSETTA</h6> -->
+              <p class="card-subtitle mb-2 text-muted">Computer Science, Faculty of Engineering of Lund University</p>
+              <p class="card-text collapse" id="ROSETTA" aria-expanded="false">ROSETTA stands for RObot control for Skilled ExecuTion of Tasks in natural interaction with humans; based on Autonomy, cumulative knowledge and learning. It consists of a set of ontologies of robot skills implemented with the goal to create an intelligent support system for reconfiguration and adaptation of robot-based manufacturing cells. Along the years, the ontology has been used to enhance cognitive abilities of robots that are required to plan and execute assembly tasks, robot programming, and skill reusability in industrial scenarios.</p>
+              <a role="button" class="card-link more collapsed" data-toggle="collapse" href="#ROSETTA" aria-expanded="false" aria-controls="ROSETTA"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#ROSETTA-pubs" aria-expanded="false" aria-controls="ROSETTA-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="ROSETTA-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+
+                    <a href="#cog-rec-card">cog-rec</a>
+
+                </li>
+
+              </ul><br>
+
+              <a class="card-link" href="http://www.fp7rosetta.org/">Project Website</a>
+
+
+              <a class="card-link" href="http://cs.lth.se/english/">Maintainer Website</a>
+
+
+              <a class="card-link" href="https://github.com/jacekmalec/Rosetta_ontology">Source Code</a>
+
+            </div>
+          </div><br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cogs" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Cognitive Capabilities</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+          <div class="card w-100" id="cog-rec-card">
+            <div class="card-body">
+              <h5 class="card-title">Recognition and Categorization</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-rec" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-rec" aria-expanded="false" aria-controls="cog-rec"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-rec-pubs" aria-expanded="false" aria-controls="cog-rec-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-rec-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#ORO-card">ORO</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#ORO-card">ORO</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">BeÃler, Daniel, Robert Porzel, et al. (2019). Foundational Models for Manipulation Activity Parsing. In: Augmented Reality and Virtual Reality -- Changing Realities in a Dynamic World. Ed. by Timothy Jung, M. Claudia tom Dieck, and Philipp A. Rauschnabel. 978-3-030-37869-1. Springer. isbn: 978-3-030-37869-1.
+                    <a href="#KnowRob-card">KnowRob</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#OROSU-card">OROSU</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#OROSU-card">OROSU</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#PMK-card">PMK</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#PMK-card">PMK</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#CARESSES-card">CARESSES</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#CARESSES-card">CARESSES</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#ROSETTA-card">ROSETTA</a>
+                </li>
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+                    <a href="#ROSETTA-card">ROSETTA</a>
+                </li>
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-dec-card">
+            <div class="card-body">
+              <h5 class="card-title">Decision Making and Choice</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-dec" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-dec" aria-expanded="false" aria-controls="cog-dec"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-dec-pubs" aria-expanded="false" aria-controls="cog-dec-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-dec-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-perc-card">
+            <div class="card-body">
+              <h5 class="card-title">Perception and Situation Assessment</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-perc" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-perc" aria-expanded="false" aria-controls="cog-perc"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-perc-pubs" aria-expanded="false" aria-controls="cog-perc-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-perc-pubs" aria-expanded="false">
+
+                <li class="list-group-item font-weight-light font-italic text-muted">Beetz, Michael, Ferenc Balint-Benczedi, et al. (2015). RoboSherlock: Unstructured information processing for robot perception. In: pp. 1549--1556.
+                    <a href="#KnowRob-card">KnowRob</a>
+                </li>
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-pred-card">
+            <div class="card-body">
+              <h5 class="card-title">Prediction and Monitoring</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-pred" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-pred" aria-expanded="false" aria-controls="cog-pred"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-pred-pubs" aria-expanded="false" aria-controls="cog-pred-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-pred-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-prob-card">
+            <div class="card-body">
+              <h5 class="card-title">Problem Solving and Planning</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-prob" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-prob" aria-expanded="false" aria-controls="cog-prob"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-prob-pubs" aria-expanded="false" aria-controls="cog-prob-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-prob-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-reas-card">
+            <div class="card-body">
+              <h5 class="card-title">Reasoning and Belief Maintenance</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-reas" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-reas" aria-expanded="false" aria-controls="cog-reas"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-reas-pubs" aria-expanded="false" aria-controls="cog-reas-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-reas-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-exec-card">
+            <div class="card-body">
+              <h5 class="card-title">Execution and Action</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-exec" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-exec" aria-expanded="false" aria-controls="cog-exec"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-exec-pubs" aria-expanded="false" aria-controls="cog-exec-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-exec-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-inter-card">
+            <div class="card-body">
+              <h5 class="card-title">Interaction and Communication</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-inter" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-inter" aria-expanded="false" aria-controls="cog-inter"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-inter-pubs" aria-expanded="false" aria-controls="cog-inter-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-inter-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+          <div class="card w-100" id="cog-remem-card">
+            <div class="card-body">
+              <h5 class="card-title">Remembering, Reflection, and Learning</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text collapse" id="cog-remem" aria-expanded="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex.</p>
+              <a role="button" class="more collapsed" data-toggle="collapse" href="#cog-remem" aria-expanded="false" aria-controls="cog-remem"></a><br>
+              <a role="button" class="card-link pubs collapsed" data-toggle="collapse" href="#cog-remem-pubs" aria-expanded="false" aria-controls="cog-remem-pubs"></a><br>
+              <ul class="list-group list-group-flush collapse" id="cog-remem-pubs" aria-expanded="false">
+
+              </ul>
+            </div>
+          </div><br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact us</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script>
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 56)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 56
+  });
+
+})(jQuery); // End of use strict
+  </script>
+
+</body>
+
+</html>
+

@@ -2,12 +2,12 @@
   "id": "PMK",
   "name": "PMK",
   "short_name": "PMK",
-  "url":  "PROJECT_WEBSITE",
-  "src":  "PROJECT_SOURCE_CODE",
-  "year": "?-?",
-  "maintainer":     "MAINTAINER_NAME",
-  "maintainer_url": "MAINTAINER_WEBSITE",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
+  "url":  "https://github.com/MohammedDiab1/PMK",
+  "src":  "https://github.com/MohammedDiab1/PMK",
+  "year": "2019-",
+  "maintainer":     "Institute of Industrial and Control Engineering (IOC), Polytechnic University of Catalonia (UPC)",
+  "maintainer_url": "https://ioc.upc.edu/en",
+  "text": "Perception and Manipulation knowledge framework (PMK) presents a standardized ontology framework for autonomous robot perception and manipulation, which follows the IEEE standards 1872 of representing knowledge for the robotic domain. Moreover, an inference mechanism for reasoning over the knowledge is included, which enhances the planning of manipulation tasks. A perception module can be integrated with the framework to capture a rich semantic description of the scene, knowledge about the physical behavior of the objects, and reasoning about the potential manipulation actions. The reasoning scope of PMK is divided into four parts: reasoning for perception, the reasoning for object features, the reasoning for a situation, and reasoning for planning.",
   "publications": [
     {
         "short": "Name et al. Year",

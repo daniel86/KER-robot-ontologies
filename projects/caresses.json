@@ -2,12 +2,12 @@
   "id": "CARESSES",
   "name": "CARESSES",
   "short_name": "CARESSES",
-  "url":  "PROJECT_WEBSITE",
-  "src":  "PROJECT_SOURCE_CODE",
-  "year": "?-?",
-  "maintainer":     "MAINTAINER_NAME",
-  "maintainer_url": "MAINTAINER_WEBSITE",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
+  "url":  "http://caressesrobot.org/en/",
+  "src":  "https://github.com/Suman7495/Robot-Navigation-for-Vision-Based-HAR/tree/master/Vision%20Based%20Navigation%20for%20HAR/ontology",
+  "year": "2017-",
+  "maintainer":     "Department of Informatics, Bioengineering, Robotics, and Systems Engineering, University of Genoa",
+  "maintainer_url": "https://www.dibris.unige.it/en/",
+  "text": "CARESSES is an international, multidisciplinary project whose goal is to design the first robots that can assist older people and adapt to the culture of the individual they are taking care of. The robots will help the users in many ways including reminding them to take their medication, encouraging them to keep active, helping them keep in touch with family and friends. Each action will be performed with attention to the older person’s customs, cultural practices and individual preferences.",
   "publications": [
     {
         "short": "Name et al. Year",
@@ -21,3 +21,5 @@
     }
   ]
 }
+
+

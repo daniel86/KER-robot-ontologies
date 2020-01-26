@@ -2,12 +2,12 @@
   "id": "ROSETTA",
   "name": "ROSETTA",
   "short_name": "ROSETTA",
-  "url":  "PROJECT_WEBSITE",
-  "src":  "PROJECT_SOURCE_CODE",
-  "year": "?-?",
-  "maintainer":     "MAINTAINER_NAME",
-  "maintainer_url": "MAINTAINER_WEBSITE",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.",
+  "url":  "http://www.fp7rosetta.org/",
+  "src":  "https://github.com/jacekmalec/Rosetta_ontology",
+  "year": "2013-",
+  "maintainer":     "Computer Science, Faculty of Engineering of Lund University",
+  "maintainer_url": "http://cs.lth.se/english/",
+  "text": "ROSETTA stands for RObot control for Skilled ExecuTion of Tasks in natural interaction with humans; based on Autonomy, cumulative knowledge and learning. It consists of a set of ontologies of robot skills implemented with the goal to create an intelligent support system for reconfiguration and adaptation of robot-based manufacturing cells. Along the years, the ontology has been used to enhance cognitive abilities of robots that are required to plan and execute assembly tasks, robot programming, and skill reusability in industrial scenarios.",
   "publications": [
     {
         "short": "Name et al. Year",
