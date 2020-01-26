@@ -7,17 +7,12 @@
   "year": "2013-",
   "maintainer":     "Polytechnic Institute of Castelo Branco, Portugal",
   "maintainer_url": "https://www.ipcb.pt/",
-  "text": "An Ontology for Robotic Orthopedic Surgery (OROSU) was developed and then applied for hip resurfacing surgery (e.g., for trimming the femoral head). In this scope, the main goal of the research, related to ontologies, was to build a knowledge-based framework for this surgical scenario, along with a formal definition of components and actions to be performed during the surgery. The developed ontology was partially based on the 1872–2015 – IEEE Standard Ontologies for Robotics and Automation. The work was developed under the HIPROB and ECHORD projects, funded by the Portuguese Science Foundation and the EU-FP7, respectively. The framework is among the first to integrate robotic ontologies in the domain of surgical robotics.",
+  "text": "An Ontology for Robotic Orthopedic Surgery (OROSU) was developed and then applied for hip resurfacing surgery (e.g., for trimming the femoral head). In this scope, the main goal of the research, related to ontologies, was to build a knowledge-based framework for this surgical scenario, along with a formal definition of components and actions to be performed during the surgery. The developed ontology was partially based on the 1872-2015 - IEEE Standard Ontologies for Robotics and Automation. The work was developed under the HIPROB and ECHORD projects, funded by the Portuguese Science Foundation and the EU-FP7, respectively. The framework is among the first to integrate robotic ontologies in the domain of surgical robotics.",
   "publications": [
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
-    },
-    {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Goncalves et al. 2015",
+        "text": "Goncalves, Paulo JS and Pedro MB Torres (2015). Knowledge representation applied to robotic orthopedic surgery. In: Robotics and Computer-Integrated Manufacturing. 33, pp. 90-99.",
+        "cogs": ["cog-exec"]
     }
   ]
 }

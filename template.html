@@ -115,16 +115,16 @@ section {
           </ul>
           <!-- -->
           <!-- TODO: add link to KER -->
-          <p class="lead">This page has been created to summarize the findings of the literature review paper entitled <em>"A Review and Comparison of Ontology-based Approaches to Robot Autonomy"</em> that was published at the Knowledge Engineering Review journal in 2020.</p>
+          <p class="lead">This page has been created to summarize the findings of the literature review paper entitled <em>"A Review and Comparison of Ontology-based Approaches to Robot Autonomy"</em> that was published at the Knowledge Engineering Review journal in 2019.</p>
           <p class="lead">This is the abstract of the paper: <div class="abstract">Within the next decades, robots will need to be able to execute a large variety of tasks autonomously in a large variety of environments. To relax the resulting programming effort, a knowledge-enabled approach to robot programming can be adopted to organize information in re-usable knowledge pieces. However, for the ease of re-use, there needs to be an agreement on the meaning of terms. A common approach is to represent these terms using ontology languages that conceptualize the respective domain. In this work, we will review projects that use ontologies to support robot autonomy. We will systematically search for projects that fulfill a set of inclusion criteria, and compare them with each other with respect to the scope of their ontology, what types of cognitive capabilities are supported by the use of ontologies, and which is their application domain.</div></p>
           <p class="lead">Please use the following bibtex entry for citing us:<br><br>
           <!-- TODO: update the bibtex entry -->
           <textarea id="bibtex" class="form-control rounded" readonly>
-@article{olivares20ker,
+@article{olivares19ker,
   author = {Olivares-Alarcos, Alberto and Be{\ss}ler, Daniel and Khamis, Alaa and Goncalves, Paulo and Habib, Maki and Bermejo, Julita and Barreto, Marcos and Diab, Mohammed and Rosell, Jan and Quintas, Jo\~ao and Olszewska, Joanna and Nakawala, Hirenkumar and Pignaton, Edison and Gyrard, Amelie and Borgo, Stefano and Aleny\`a, Guillem and Beetz, Michael and Li, Howard},
-  title = {A Review and Comparison of Ontology-based Approaches to Robot Autonomy},
-  journal = {Knowledge Eng. Review},
-  year = {2020}
+  title = {A Review and Comparison of Ontology-based Approaches to Robot Autonomy}, 
+  journal={The Knowledge Engineering Review}, publisher={Cambridge University Press}, 
+  pages={e29}, volume={34}, DOI={10.1017/S0269888919000237}, year = {2019}
 }
           </textarea>
           </p>
@@ -138,7 +138,7 @@ section {
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Projects</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>In total, six frameworks/projects have been subject of study in our review. For each of them, their underlying principles and foundations are discussed, as well as what application domain the system was designed for. We also describe how the frameworks evolved over time, and what impact they have had so far. The selection of the presented projects has been done based on the selection criteria presented within the article. To the best of our knowledge, we have included all projects that satisfy the criteria.</p>
 {% for proj in projects %}
           <div class="card w-100" id="{{ proj.id }}-card">
             <div class="card-body">
@@ -179,7 +179,7 @@ section {
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Cognitive Capabilities</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>The scope of reasoning is our second classification criterion for the comparison between ontology-based approaches in autonomous robotics. It consists of a categorization of nine ontology-based reasoning tasks that are in particular relevant for autonomous robotics, and that have been considered in previous works.</p>
 {% for cog in cogs %}
           <div class="card w-100" id="{{ cog.id }}-card">
             <div class="card-body">
@@ -208,7 +208,10 @@ section {
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <p class="lead">Should you have any doubt/comment about our work, please, do not hesitate to contact us.
+          <br>
+          <br>Alberto Olivares-Alarcos - <a href="url">aolivares@iri.upc.edu</a> 
+          <br>Daniel Be&szligler - <a href="url">danielb@uni-bremen.de</a></p>
         </div>
       </div>
     </div>
@@ -217,7 +220,7 @@ section {
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; 2020</p>
     </div>
     <!-- /.container -->
   </footer>

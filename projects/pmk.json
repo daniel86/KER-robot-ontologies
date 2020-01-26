@@ -10,14 +10,14 @@
   "text": "Perception and Manipulation knowledge framework (PMK) presents a standardized ontology framework for autonomous robot perception and manipulation, which follows the IEEE standards 1872 of representing knowledge for the robotic domain. Moreover, an inference mechanism for reasoning over the knowledge is included, which enhances the planning of manipulation tasks. A perception module can be integrated with the framework to capture a rich semantic description of the scene, knowledge about the physical behavior of the objects, and reasoning about the potential manipulation actions. The reasoning scope of PMK is divided into four parts: reasoning for perception, the reasoning for object features, the reasoning for a situation, and reasoning for planning.",
   "publications": [
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Diab et al. 2017",
+        "text": "Diab, Mohammed, Aliakbar Akbari, Jan Rosell, et al. (2017). An ontology framework for physics-based manipulation planning. In: Iberian Robotics conference. Springer.",
+        "cogs": ["cog-dec"]
     },
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Diab et al. 2019",
+        "text": "Diab, Mohammed, Aliakbar Akbari, Muhayy Ud Din, et al. (2019). PMK-A Knowledge Processing Framework for Autonomous Robotics Perception and Manipulation. In: Sensors. 19. 5.",
+        "cogs": ["cog-dec", "cog-perc", "cog-reas"]
     }
   ]
 }

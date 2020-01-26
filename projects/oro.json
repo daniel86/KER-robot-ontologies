@@ -10,14 +10,24 @@
   "text": "ORO is a project focused on the implementation of a common representation frameworkfor autonomous robots with special emphasizes on human-robot interaction. The proposed framework was meant to enhance robot’s interactionwith complex and human-inhabited environments, were robots are expected to exhibit advancedcognitive skills, such as: object recognition, natural language interaction, task planning withpossible dynamic re-planning, ability to cooperate with other robots or humans, etc.",
   "publications": [
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Ros et al. 2010",
+        "text": "Ros, Raquel et al. (2010). Which one? grounding the referent based on efficient human-robot interaction. In: International Symposium in Robot and Human Interactive Communication (RO-MAN). IEEE, pp. 570-575.",
+        "cogs": ["cog-rec", "cog-perc", "cog-inter"]
     },
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Sisbot et al. 2011",
+        "text": "Sisbot, E Akin, Raquel Ros, and Rachid Alami (2011). Situation assessment for human-robot interactive object manipulation. In: International Symposium in Robot and Human Interactive Communication (RO-MAN). IEEE, pp. 15-20",
+        "cogs": ["cog-perc"]
+    },
+    {
+        "short": "Warnier et al. 2012",
+        "text": "Warnier, Mathieu et al. (2012). When the robot puts itself in your shoes. Managing and exploiting human and robot beliefs. In: International Symposium on Robot and Human Interactive Communication (RO-MAN). IEEE, pp. 948-954.",
+        "cogs": ["cog-reas"]
+    },
+    {
+        "short": "Lemaignan et al. 2011",
+        "text": "Lemaignan, Severin, Raquel Ros, Rachid Alami, et al. (2011). What are you talking about? grounding dialogue in a perspective-aware robotic architecture. In: International Symposium on Robot and Human Interactive Communication (RO-MAN). IEEE, pp. 107-112.",
+        "cogs": ["cog-inter"]
     }
   ]
 }

@@ -10,14 +10,19 @@
   "text": "ROSETTA stands for RObot control for Skilled ExecuTion of Tasks in natural interaction with humans; based on Autonomy, cumulative knowledge and learning. It consists of a set of ontologies of robot skills implemented with the goal to create an intelligent support system for reconfiguration and adaptation of robot-based manufacturing cells. Along the years, the ontology has been used to enhance cognitive abilities of robots that are required to plan and execute assembly tasks, robot programming, and skill reusability in industrial scenarios.",
   "publications": [
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Stenmark et al. 2015",
+        "text": "Stenmark, Maj, Jacek Malec, and Andreas Stolt (2015). From high-level task descriptions toexecutable robot code. In: Intelligent Systems. Springer, pp. 189-202.",
+        "cogs": ["cog-exec"]
     },
     {
-        "short": "Name et al. Year",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.",
-        "cogs": ["cog-rec"]
+        "short": "Stenmark et al. 2018",
+        "text": "Stenmark, Maj, Mathias Haage, et al. (2018). Supporting semantic capture during kinestheticteaching of collaborative industrial robots. In: International Journal of Semantic Computing. 12.01, pp. 167-186.",
+        "cogs": ["cog-remem"]
+    },
+    {
+        "short": "Topp et al. 2018",
+        "text": "Topp, Elin A et al. (2018). Ontology-Based Knowledge Representation for Increased Skill Reusability in Industrial Robots. In: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, pp. 5672-5678.",
+        "cogs": ["cog-remem"]
     }
   ]
 }

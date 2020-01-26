@@ -10,14 +10,59 @@
   "text": "KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web). It supports different deterministic and probabilistic reasoning mechanisms, clustering, classification and segmentation methods, and includes query interfaces as well as visualization tools.",
   "publications": [
     {
-        "short": "Beßler et al. 2019",
-        "text": "Beßler, Daniel, Robert Porzel, et al. (2019). Foundational Models for Manipulation Activity Parsing. In: Augmented Reality and Virtual Reality -- Changing Realities in a Dynamic World. Ed. by Timothy Jung, M. Claudia tom Dieck, and Philipp A. Rauschnabel. 978-3-030-37869-1. Springer. isbn: 978-3-030-37869-1.",
+        "short": "Be\u00DFler et al. 2019",
+        "text": "Be\u00DFler, Daniel, Robert Porzel, et al. (2019). Foundational Models for Manipulation Activity Parsing. In: Augmented Reality and Virtual Reality -- Changing Realities in a Dynamic World. Ed. by Timothy Jung, M. Claudia tom Dieck, and Philipp A. Rauschnabel. 978-3-030-37869-1. Springer. isbn: 978-3-030-37869-1.",
         "cogs": ["cog-rec"]
     },
     {
         "short": "Beetz et al. 2015",
-        "text": "Beetz, Michael, Ferenc Balint-Benczedi, et al. (2015). RoboSherlock: Unstructured information processing for robot perception. In: pp. 1549--1556.",
+        "text": "Beetz, Michael, Ferenc Balint-Benczedi, et al. (2015). RoboSherlock: Unstructured information processing for robot perception. In: IEEE International Conference on Robotics and Automation (ICRA). pp. 1549--1556.",
         "cogs": ["cog-perc"]
+    },
+    {
+        "short": "Tenorth et al. 2012",
+        "text": "Tenorth, Moritz and Michael Beetz (2012). A unified representation for reasoning about robot actions, processes, and their effectson objects. In IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, pp. 1351-1358",
+        "cogs": ["cog-pred", "cog-prob"]
+    },
+    {
+        "short": "Be\u00DFler et al. 2018",
+        "text": "Be\u00DFler, Daniel, Mihai Pomarlan, and Michael Beetz (2018). OWL-enabled Assembly Planningfor Robotic Agents. In: Proceedings of the 2018 International Conference on Autonomous Agents. AAMAS '18. Finalist for the Best Robotics Paper Award. Stockholm, Sweden.",
+        "cogs": ["cog-prob", "cog-reas"]
+    },
+    {
+        "short": "Tenorth et al. 2010",
+        "text": "Tenorth, Moritz, Lars Kunze, et al. (2010). KNOWROB-MAP - Knowledge-LinkedSemantic Object Maps. In:10th IEEE-RAS International Conference on Humanoid Robots. Nashville, TN, USA, pp. 430-435.",
+        "cogs": ["cog-reas"]
+    },
+    {
+        "short": "Beetz et al. 2010",
+        "text": "Beetz, Michael, Lorenz Mosenlechner, and Moritz Tenorth (2010). CRAM - A Cognitive RobotAbstract Machine for everyday manipulation in human environments. In: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE,pp. 1012-1017.",
+        "cogs": ["cog-exec"]
+    },
+    {
+        "short": "Tenorth et al. 2014",
+        "text": "Tenorth, Moritz, Georg Bartels, and Michael Beetz (2014). Knowledge-based Specification of Robot Motions. In: Proc. of the European Conference on Artificial Intelligence (ECAI).",
+        "cogs": ["cog-exec"]
+    },
+    {
+        "short": "Tenorth et al. 2010",
+        "text": "Tenorth, Moritz, Daniel Nyga, and Michael Beetz (2010). Understanding and ExecutingInstructions for Everyday Manipulation Tasks from the World Wide Web. In: IEEE International Conference on Robotics and Automation (ICRA). Anchorage, AK, USA, pp. 1486-1491.",
+        "cogs": ["cog-exec"]
+    },
+    {
+        "short": "Yazdani et al. 2018",
+        "text": "Yazdani, Fereshta et al. (2018). Cognition-enabled Framework for Mixed Human-Robot Rescue Team. In: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE. Madrid, Spain.",
+        "cogs": ["cog-inter"]
+    },
+    {
+        "short": "Beetz et al. 2018",
+        "text": "Beetz, Michael, Daniel Be\u00DFler, Andrei Haidu, et al. (2018). KnowRob 2.0 - A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents. In: IEEE International Conference on Robotics and Automation (ICRA).",
+        "cogs": ["cog-remem"]
+    },
+    {
+        "short": "Beetz et al. 2015",
+        "text": "Beetz, Michael, Moritz Tenorth, and Jan Winkler (2015). Open-EASE - A Knowledge Processing Service for Robots and Robotics/AI Researchers. In: IEEE International Conference on Robotics and Automation (ICRA). Finalist for the Best Cognitive Robotics Paper Award. Seattle, Washington, USA.",
+        "cogs": ["cog-remem"]
     }
   ]
 }
